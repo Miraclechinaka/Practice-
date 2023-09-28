@@ -1,0 +1,57 @@
+ #the following is a mathematical example ofa doctest for a function such as add (a,b) that adds two numbes together 
+
+ """
+ Given two numbers add the sum.
+ >>> add (2,3)
+ 5
+ """
+#add docstrings for the two arguments that are passed ti the funnction and the value that is returned.
+
+"""
+Given two integers, return the sum.
+  :param a:int
+  :param b:int
+  :return:int
+
+  >>> add(2,3)
+  5
+  """
+#this short function indicates how the doctest is incorporated.
+
+ def add(a,b):
+  """
+  Given two integar return the sum.
+
+  :param a:int
+  :param b:int
+  :return:int
+
+  >>> add(2,3)
+  5
+  """
+  retun a+b
+
+#we are adding the following lines before and after our function:
+
+ import doctest
+ ...
+ doctest.testmod()
+
+ import doctest
+
+ def add(a,b):
+ """
+ Given two integar return the sum.
+
+ :param a:int
+ :param b:int
+ :return:int
+
+ >>> add(2,3)
+ 5
+ """
+ return a+b
+
+ doctest.testmod()
+
+
