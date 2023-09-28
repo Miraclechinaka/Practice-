@@ -25,8 +25,12 @@ class Calculator:
     def __str__(self):
         return f"{self.a} { self.b}"
 
+   
+        num1, num2 = map(int, (input("enter values for num1, num2 separated by comma: ").split(", ")))
 
-pp = Calculator(4, 10)
+
+
+pp = Calculator(5, 10)
 print(pp.sum())
 print(pp.subtract())
 print(pp.multiply())
